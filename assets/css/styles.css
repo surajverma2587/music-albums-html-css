@@ -26,7 +26,6 @@ body {
   font-weight: 600;
 }
 
-/* .nav-item:last-child a {
-  color: red;
-  text-decoration: none;
-} */
+.nav-item a:hover {
+  color: #fff;
+}

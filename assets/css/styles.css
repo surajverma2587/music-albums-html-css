@@ -29,3 +29,14 @@ body {
 .nav-item a:hover {
   color: #fff;
 }
+
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding: 10px;
+  }
+}

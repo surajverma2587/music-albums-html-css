@@ -17,7 +17,7 @@ body {
 }
 
 .nav-item {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .nav-item a {
@@ -30,6 +30,60 @@ body {
   color: #fff;
 }
 
+.banner {
+  text-align: center;
+  padding: 150px 75px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0d6dfdb0;
+}
+
+.btn-primary:active {
+  background-color: #0d6efd;
+}
+
+.btn-secondary {
+  background-color: #1db149;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #1db1499f;
+}
+
+.btn-secondary:active {
+  background-color: #1db149;
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
@@ -38,5 +92,9 @@ body {
 
   .nav-item {
     padding: 10px;
+  }
+
+  .links-container {
+    flex-direction: column;
   }
 }

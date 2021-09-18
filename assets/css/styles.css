@@ -1,5 +1,5 @@
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -38,6 +38,7 @@ body {
 .links-container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .content {
@@ -51,11 +52,12 @@ body {
 
 .btn {
   padding: 20px;
-  border: 1px solid black;
   border-radius: 4px;
   margin: 0px 10px;
   text-decoration: none;
   color: #000;
+  min-width: 200px;
+  margin-bottom: 16px;
 }
 
 .btn-primary {
@@ -65,6 +67,7 @@ body {
 
 .btn-primary:hover {
   background-color: #0d6dfdb0;
+  font-weight: 700;
 }
 
 .btn-primary:active {
@@ -78,10 +81,59 @@ body {
 
 .btn-secondary:hover {
   background-color: #1db1499f;
+  font-weight: 700;
 }
 
 .btn-secondary:active {
   background-color: #1db149;
+}
+
+.container {
+  margin: 0px 100px;
+}
+
+.albums-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album-card {
+  width: 18rem;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  border: 1px solid #a3a3a3;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px #d4d4d4;
+}
+
+.album-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-img img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.card-body {
+  line-height: 24px;
+  text-align: justify;
+  margin: 16px 0px;
+}
+
+.card-footer {
+  margin: 16px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.songs-info {
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 576px) {
@@ -96,5 +148,13 @@ body {
 
   .links-container {
     flex-direction: column;
+  }
+
+  .container {
+    margin: 0px 16px;
+  }
+
+  .banner {
+    padding: 150px 16px;
   }
 }
